@@ -36,13 +36,6 @@ fn main() {
 
     let dt = Local::now();
 
-    println!("Checking for: {}", dt);
-    println!("Checking for: {}", dt.naive_local());
-    println!("Checking for: {}", dt.to_utc());
-    println!("Checking for: {}", dt.year());
-    println!("Checking for: {}", dt.month());
-    println!("Checking for: {}", dt.day());
-
     let month = Month::try_from(u8::try_from(dt.month()).unwrap()).ok();
 
     match month {
@@ -82,7 +75,7 @@ fn main() {
             println!("\nSearching for these dates representing today:");
             println!("{date_to_search_for_v1}");
             println!("{date_to_search_for_v2}");
-            println!("{date_to_search_for_v3}");
+            println!("{date_to_search_for_v3}\n");
 
             let mut scrapings_filtered = vec![];
 
@@ -107,7 +100,7 @@ fn main() {
 
             assert!(print_stdout(scrapings_filtered.with_title()).is_ok());
 
-            println!("Finished!");
+            println!("\nFinished!\n");
         }
     }
 }

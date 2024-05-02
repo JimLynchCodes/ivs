@@ -6,7 +6,7 @@ investor relations scraper
 
 ### Output Example
 
-<img src="./ivs-example-output.png">
+<img src="./ivs-example-output-2.png">
 
 <br/>
 
